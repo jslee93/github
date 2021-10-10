@@ -30,7 +30,7 @@ tdtz = tdt.astimezone(pytz.utc)
 # 264b7833c3eeffecc50e69d717f39d41
 # zhimi.airpurifier.v7
 
-g_apuri = AirPurifier('192.168.50.118', '264b7833c3eeffecc50e69d717f39d41')
+g_apuri = AirPurifier('192.168.0.10', '260f033938f0b21c3ebf316a8873a30e')
 
 sts = g_apuri.status()
 
@@ -57,7 +57,7 @@ json_body = [
     {
 	"measurement": nameMeasurement,
 	"tags": {
-            "room": "27r103"
+            "room": "kj423"
 	},
 	"time": sdtz,
 	"fields": fdata
